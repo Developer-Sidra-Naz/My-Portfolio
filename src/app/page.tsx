@@ -1,20 +1,22 @@
-import Image from "next/image";
-import Navbar from "./components/Navbar";
+import React from "react";
+import Header from "./components/Header";
+import About from "./components/About";
+import Skills from "./components/Skills";
+import Projects from "./components/Project"
 import Footer from "./components/Footer";
-import ROSE from "./public/assets/rose.png"
 export default function Home() {
   return (
     <div>
-  <div className="bg-red-100  flex justify-around items-start">
-   <h1 className="text-5xl font-bold p-20 my-10">
-    Flower Tells, <br />
-    Flower Heals!
-  </h1>
-<Image className="w-80 h-70" src={ROSE} alt="" />
+  <div>
+    <Header />
+    <main className="container mx-auto my-10 px-4">
+      <About />
+      <Skills />
+      <Projects />
+      <Footer />
+    </main>
   </div>
-<Footer/>
+
     </div>
-    
   );
 }
-
