@@ -6,7 +6,7 @@ import Link from "next/link"; // Import Link from Next.js
 const projects = [
   {
     title: "Static Resume",
-    description: "Using of HTML, CSS and Typescript",
+    description: "Using of HTML and CSS.",
     link: "https://static-resume-building-hackathon-1-0.vercel.app",
     bgColor: "from-purple-600 to-pink-500",
   },
@@ -54,7 +54,7 @@ const Projects: React.FC = () => (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       {projects.map((project, index) => (
         <Project
-          key={project.title + index} // Ensure a unique key
+          key={project.title} // Ensure a unique key
           title={project.title}
           description={project.description}
           link={project.link}
