@@ -3,8 +3,8 @@
 import React from 'react';
 
 const AboutPage: React.FC = () => (
-  <div className="container mx-auto my-10 px-6 ">
-      <h2 className="text-4xl font-extrabold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-red-500">
+  <div className="container mx-auto my-10 px-6">
+    <h2 className="text-4xl font-extrabold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 via-pink-500 to-red-500">
       About Me
     </h2>
     

@@ -1,6 +1,7 @@
 // src/components/Projects.tsx
 
 import React from "react";
+import Link from "next/link"; // Import Link from Next.js
 
 const projects = [
   {
@@ -34,14 +35,14 @@ const Project: React.FC<{ title: string; description: string; link: string; bgCo
   >
     <h3 className="text-2xl font-semibold mb-4">{title}</h3>
     <p className="text-lg mb-4">{description}</p>
-    <a
+    <Link
       href={link}
       target="_blank"
       rel="noopener noreferrer"
-      className="inline-block text-lg font-medium text-white border-b-2 border-transparent hover:border-white transition duration-300"
+      className="inline-block text-lg font-medium text-white bg-transparent border-2 border-white rounded py-2 px-4 hover:bg-white hover:text-black transition duration-300"
     >
       View Project
-    </a>
+    </Link>
   </div>
 );
 
@@ -53,7 +54,7 @@ const Projects: React.FC = () => (
     <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
       {projects.map((project, index) => (
         <Project
-          key={project.title} // Use a unique key based on the project title
+          key={project.title + index} // Ensure a unique key
           title={project.title}
           description={project.description}
           link={project.link}
