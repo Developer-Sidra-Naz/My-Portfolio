@@ -10,7 +10,7 @@ const AboutPage: React.FC = () => (
     
     <div className="bg-white shadow-lg p-2 rounded-lg">
       <p className="text-xl text-gray-700 mb-6">
-        Hello! I am <span className="font-semibold text-pink-500">Sidra Naz</span>, a creative frontend developer who loves to build responsive and visually stunning websites.
+        Hello! I&apos;m <span className="font-semibold text-pink-500">Sidra Naz</span>, a creative frontend developer who loves to build responsive and visually stunning websites.
       </p>
       <p className="text-lg text-gray-600 leading-relaxed">
         With a background in <span className="text-blue-500 font-medium">TypeScript</span>, <span className="text-green-500 font-medium">React</span>, and <span className="text-purple-500 font-medium">Tailwind CSS</span>, I focus on creating smooth, engaging user experiences. I am always exploring new technologies and tools to bring fresh ideas into my projects.
